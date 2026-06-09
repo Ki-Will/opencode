@@ -31,7 +31,7 @@
     "typecheck": "tsgo --noEmit",
     "test": "bun test src",
     "test:ci": "mkdir -p .artifacts/unit && bun test src --reporter=junit --reporter-outfile=.artifacts/unit/junit.xml",
-    "dev": "vite",
+    "dev": "node init && vite",
     "generate:tailwind": "bun run script/tailwind.ts",
     "generate:v2-oc2": "bun run script/build-oc2-v2-overrides.ts"
   },
